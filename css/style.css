@@ -215,7 +215,7 @@ header {
     margin-top: 20px;
 }
 
-/*End Estilos Generales Cards*/
+
 
 /* estilos pie  */
 
@@ -270,5 +270,229 @@ header {
     border: 2px solid var(--color_text-secundary);
     color: var(--color_text-secundary);
 }
+
+.image_content div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image_content img {
+    width: 230px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.image_content img:hover {
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+/* end-pie  */
+
+/* servicios */
+.container_card-primera {
+    padding-top: 100px;
+}
+
+.card_primera {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text_card-primera p{
+    color: var(--color_new-item);
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+}
+
+.text_card-primera h1{
+    font-size: var(--text_size_title);
+    font-weight: 600;
+    color: var(--color_text-secundary);
+}
+
+.container_box-cardPrimera{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box_card-primera{
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+}
+
+.box_card-primera:hover{
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box_card-primera img {
+    width: 180px;
+}
+
+.image_card img {
+    width: 120px;
+}
+
+
+.box_card-primera h2{
+    font-size: var(--text_title_card);
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.box_card-primera p{
+    margin-top: 20px;
+}
+
+.container_card-dos {
+    padding-top: 100px;
+}
+
+.card_dos {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text_card-dos p{
+    color: var(--color_text-primary);
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+}
+
+.text_card-dos h1{
+    font-size: var(--text_size_title);
+    font-weight: 600;
+    color: var(--color_text-secundary);
+}
+
+.container_box-cardDos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box_card-dos{
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+}
+
+.box_card-dos:hover{
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box_card-dos img {
+    width: 110px;
+}
+.box_card-dos h2{
+    font-size: var(--text_title_card);
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.box_card-dos p{
+    margin-top: 20px;
+}
+
+/* nuevo */
+.container_card-image {
+    padding-top: 100px;
+    background-color: var(--color_new-item);
+}
+
+.card_image {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text_card-image p{
+    color: var(--color_text-secundary);
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+}
+
+.text_card-image h1{
+    font-size: var(--text_size_title);
+    font-weight: 600;
+    color: var(--color_text-secundary);
+}
+
+.container_box-cardImage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    height: 100%;
+    transition: height 1s ease 0s;
+}
+
+.box_card-image1{
+    max-width: 350px;
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin: 14px;
+    background-image: url() ;
+    background-size: cover;
+    transition: transform 0.5s ease;
+}
+
+.box_card-image1:hover{
+    transform: scale(1.1);
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box_card-image2{
+    max-width: 350px;
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin: 14px;
+    background-image: url() ;
+    background-size: cover;
+    transition: transform 0.5s ease;
+}
+
+.box_card-image2:hover{
+    transform: scale(1.1);
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box_card-image3{
+    max-width: 350px;
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin: 14px;
+    background-image: url() ;
+    background-size: cover;
+    transition: transform 0.5s ease;
+}
+
+.box_card-image3:hover{
+    transform: scale(1.1);
+    box-shadow: var(--box_shadow-primary);
+}
+
+
 
 
