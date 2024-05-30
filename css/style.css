@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,32 +8,31 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root {
-    --color_text-primary: gray;
-    --color_text-secundary: black;
-    --color_text-tertiary: rgb(77, 74, 74);
-    --main_color-primary: gray;
-    --main_color-secundary: rgb(77, 74, 74);
-    --background-color: white;
-    --color_new-item: rgb(226, 216, 216);
-    --lowtext_front_size: 16px;
-    --text_size_title:40px;
-    --text_title_card:24px;
-    --text_title_cardv2:20px;
-    --text_paragraph: 26px;
-    --box_shadow-primary: 0px 6px 50px -20px;
+:root{
+    --color_text-primary:#784212;
+    --color_text-secundary:#101E2C;
+    --color_text-tertiary:#784212;
+    --main_color_primary: #784212;
+    --main_color_secundary: #ebab73;
+    --main_color_tertiary: #F5CBA7;
+    --background-color: #fafbfe;
+    --lowText_fron_size: 16px;
+    --text_size_title: 40px;
+    --text_title_card: 24px;
+    --text_title_cardv2: 20px;
+    --text_paragraph: 16px;
+    --box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2);
 }
 
-header {
+/*header*/
+header{
     width: 100%;
     height: 100px;
     position: fixed;
     z-index: 100;
 }
 
-
-
-.container_header {
+.container_header{
     max-width: 1200px;
     height: 100%;
     margin: auto;
@@ -42,130 +41,150 @@ header {
     align-items: center;
     padding: 0px 20px;
 }
-.menu {
+
+.logo{
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.menu{
     display: flex;
     align-items: center;
 }
 
-.menu nav {
+.menu nav{
     margin: 0px 20px;
 }
 
-.menu nav ul {
+.menu nav ul{
     display: flex;
 }
 
-.menu nav ul li {
+.menu nav ul li{
     list-style: none;
     margin: 20px 16px;
 }
 
-.menu nav ul li a {
+.menu nav ul li a{
     color: var(--color_text-secundary);
-    font-size: 16px;
+    font-size: var(--lowText_fron_size);
     position: relative;
 }
 
-.menu nav ul li a:hover {
-    color: var(--background-color);
+.menu nav ul li a:hover{
+    color: var(--color_text-primary);
 }
 
-.btn_quote {
+.btn_quote{
     display: block;
     padding: 8px 40px;
-    border: 2px  var(--color_text-secundary);
+    border: 2px solid var(--color_text-primary);
     border-radius: 8px;
     font-weight: 500;
-    color: var(--color_text-secundary);
+    color: var(--color_text-tertiary);
     margin: 0px 20px;
     transition: all 300ms;
 }
 
-.btn_quote:hover {
-    color: var(--background-color);
-    background-color: var(--color_text-secundary);
+.btn_quote:hover{
+    color:white;
+    background: var(--color_text-primary);
 }
 
-.menu .socialMedia {
+.menu .socialMedia{
     margin: 0px 10px;
 }
 
-.menu .socialMedia a {
+.menu .socialMedia a{
     margin: 0px 4px;
 }
-.menu .socialMedia img {
+
+.menu .socialMedia img{
     width: 20px;
 }
 
-
-
-/* portado inicio */
-
-.container_cover {
+/*portada inicio*/
+.container_cover{
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: var(--color_text-primary);
+    background: var(--main_color_secundary);
 }
 
-.cover {
+.cover{
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
-    display: flex;
+    display : flex;
     align-items: center;
     padding: 0px 20px;
 }
 
-.text_cover {
+.text_cover{
     width: 100%;
     padding-right: 150px;
 }
 
-.text_cover h1 {
+.text_cover h1{
     font-size: 50px;
     color: var(--color_text-secundary);
 }
 
-.text_cover p {
+.text_cover p{
     font-size: var(--text_paragraph);
     margin-top: 40px;
-    margin-top: var(--color_text-tertiary);
+    color: var(--color_text-tertiary);
 }
 
-.btn_text {
+.btn_text{
     display: block;
     width: 150px;
     margin-top: 40px;
     padding: 10px 20px;
     text-align: center;
     font-weight: 500;
-    background: var(--color_text-secundary);
-    color: var(--background-color);
+    background: var(--main_color_primary);
+    color: white;
     border-radius: 8px;
     border: 2px solid transparent;
     cursor: pointer;
     transition: all 300ms;
 }
 
-.btn_text:hover {
+.btn_text:hover{
     background: transparent;
-    border: 2px solid var(--color_text-secundary);
-    color: var(--color_text-secundary);
+    border: 2px solid var(--main_color_primary);
+    color: var(--color_text-tertiary);
 }
 
-/* end portada de inicio */
+.image_cover{
+    width: 100%;
+}
 
-/* estilos generales card  */
+.image_cover img{
+    width: 550px;
+} 
 
-.container_card-primary {
+/*Estilos generales cards*/
+.container_card-primary{
     padding-top: 100px;
 }
 
-.card_primary {
+.card_primary{
     max-width: 1200px;
     margin: auto;
     text-align: center;
     padding: 0px 20px;
+}
+
+.text_card-primary{
+    max-width: 800px;
+    margin: auto;
 }
 
 .text_card-primary p{
@@ -202,9 +221,6 @@ header {
     box-shadow: var(--box_shadow-primary);
 }
 
-.box_card-primary img {
-    width: 200px;
-}
 .box_card-primary h2{
     font-size: var(--text_title_card);
     margin-top: 40px;
@@ -215,177 +231,110 @@ header {
     margin-top: 20px;
 }
 
-
-
-/* estilos pie  */
-
-.container_pie {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color:var(--color_new-item);
+.box_card-primary img{
+    width: 100%;
 }
 
-.content{
+/*cafetera*/
+.container_caf{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: var(--main_color_tertiary);
+}
+
+.cafetera{
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
-    display: flex;
+    display : flex;
     align-items: center;
     padding: 0px 20px;
 }
 
-.text_content {
+.text_cafetera{
     width: 100%;
     padding-right: 150px;
 }
 
-.text_content h1 {
+.text_cafetera h1{
     font-size: 50px;
     color: var(--color_text-secundary);
 }
 
-.text_content p {
+.text_cafetera p{
     font-size: var(--text_paragraph);
     margin-top: 40px;
-    margin-top: var(--color_text-tertiary);
+    color: var(--color_text-tertiary);
 }
 
-.buton_text {
+.btn_text-cafetera{
     display: block;
     width: 150px;
     margin-top: 40px;
     padding: 10px 20px;
     text-align: center;
     font-weight: 500;
-    background: var(--color_text-secundary);
-    color: var(--background-color);
+    background: var(--main_color_primary);
+    color: white;
     border-radius: 8px;
     border: 2px solid transparent;
     cursor: pointer;
     transition: all 300ms;
 }
 
-.buton_text:hover {
+.btn_text:hover{
     background: transparent;
-    border: 2px solid var(--color_text-secundary);
-    color: var(--color_text-secundary);
+    border: 2px solid var(--main_color_primary);
+    color: var(--color_text-tertiary);
 }
 
-.image_content div{
+.image_cafetera{
+    width: 350px;
+    height: 350px;
+    margin: 0 5px;
+    border-radius: 25px;
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    margin-right: 280px;
 }
 
-.image_content img {
-    width: 230px;
-    border-radius: 15px;
-    margin: 10px;
-}
-
-.image_content img:hover {
-    border: 1px solid transparent;
-    box-shadow: var(--box_shadow-primary);
-}
-/* end-pie  */
-
-/* servicios */
-.container_card-primera {
+/*servicios*/
+.container_servicios{
     padding-top: 100px;
 }
 
-.card_primera {
+.servicios{
     max-width: 1200px;
     margin: auto;
     text-align: center;
     padding: 0px 20px;
 }
 
-.text_card-primera p{
-    color: var(--color_new-item);
-    letter-spacing: 4px;
-    font-size: var(--text_paragraph);
-    font-weight: 500;
-}
-
-.text_card-primera h1{
-    font-size: var(--text_size_title);
-    font-weight: 600;
-    color: var(--color_text-secundary);
-}
-
-.container_box-cardPrimera{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-.box_card-primera{
-    max-width: 350px;
-    padding: 60px 40px;
-    border: 1px solid #e6e6e6;
-    border-radius: 20px;
-    margin: 14px;
-    transition: all 300ms;
-}
-
-.box_card-primera:hover{
-    border: 1px solid transparent;
-    box-shadow: var(--box_shadow-primary);
-}
-
-.box_card-primera img {
-    width: 180px;
-}
-
-.image_card img {
-    width: 120px;
-}
-
-
-.box_card-primera h2{
-    font-size: var(--text_title_card);
-    margin-top: 40px;
-    font-weight: 500;
-}
-
-.box_card-primera p{
-    margin-top: 20px;
-}
-
-.container_card-dos {
-    padding-top: 100px;
-}
-
-.card_dos {
-    max-width: 1200px;
+.text_servicios{
+    max-width: 800px;
     margin: auto;
-    text-align: center;
-    padding: 0px 20px;
 }
 
-.text_card-dos p{
+.text_servicios p{
     color: var(--color_text-primary);
     letter-spacing: 4px;
     font-size: var(--text_paragraph);
     font-weight: 500;
 }
 
-.text_card-dos h1{
+.text_servicios h1{
     font-size: var(--text_size_title);
     font-weight: 600;
     color: var(--color_text-secundary);
 }
 
-.container_box-cardDos{
+.container_box-servicios{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 40px;
 }
 
-.box_card-dos{
+.box_servicios{
     max-width: 350px;
     padding: 60px 40px;
     border: 1px solid #e6e6e6;
@@ -394,103 +343,276 @@ header {
     transition: all 300ms;
 }
 
-.box_card-dos:hover{
+.box_servicios:hover{
     border: 1px solid transparent;
     box-shadow: var(--box_shadow-primary);
 }
 
-.box_card-dos img {
-    width: 110px;
-}
-.box_card-dos h2{
+.box_servicios h2{
     font-size: var(--text_title_card);
     margin-top: 40px;
     font-weight: 500;
 }
 
-.box_card-dos p{
+.box_servicios p{
     margin-top: 20px;
 }
 
-/* nuevo */
-.container_card-image {
-    padding-top: 100px;
-    background-color: var(--color_new-item);
+.box_servicios img{
+    width: 100%;
 }
 
-.card_image {
+.box_servicios i{
+    margin-top: 40px;
+}
+
+/*Proyectos*/
+.container_proyecto{
+    background: var(--main_color_tertiary);
+    padding-top: 100px;
+}
+
+.proyecto{
     max-width: 1200px;
     margin: auto;
     text-align: center;
     padding: 0px 20px;
 }
 
-.text_card-image p{
-    color: var(--color_text-secundary);
+.text_proyecto{
+    max-width: 800px;
+    margin: auto;
+}
+
+.text_proyecto p{
+    color: var(--color_text-primary);
     letter-spacing: 4px;
     font-size: var(--text_paragraph);
     font-weight: 500;
 }
 
-.text_card-image h1{
+.text_proyecto h1{
     font-size: var(--text_size_title);
     font-weight: 600;
     color: var(--color_text-secundary);
 }
 
-.container_box-cardImage{
+.container_box-proyecto{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 40px;
-    margin-bottom: 80px;
-    height: 100%;
-    transition: height 1s ease 0s;
 }
 
-.box_card-image1{
+.container_box-proyecto1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box_proyecto{
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 40px;
+    margin: 14px;
+    transition: all 300ms;
+    background-image: url(https://st3.depositphotos.com/8108566/12542/v/450/depositphotos_125423270-stock-illustration-hand-with-franchise-business-concept.jpg);
+    margin-bottom: 5%;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.box_proyecto:hover{
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box_proyecto h2{
+    font-size: var(--text_title_card);
+    font-weight: 600;
+    text-align: left;
+}
+
+.box_proyecto p{
+    margin-top: 20px;
+    text-align: left;
+}
+
+.box_proyecto2{
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 40px;
+    margin: 14px;
+    transition: all 300ms;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2JoZkgKgqrgV66qjPwnywla5Hi5VamvpvAA&usqp=CAU);
+    margin-bottom: 5%;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.box_proyecto2:hover{
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box_proyecto2 h2{
+    font-size: var(--text_title_card);
+    font-weight: 600;
+    text-align: left;
+}
+
+.box_proyecto2 p{
+    margin-top: 20px;
+    text-align: left;
+}
+
+.box_proyecto3{
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 40px;
+    margin: 14px;
+    transition: all 300ms;
+    background-image: url(https://us.123rf.com/450wm/fadfebrian/fadfebrian2311/fadfebrian231100038/218473252-male-barista-making-coffee-a-cup-of-coffee-with-coffee-beans-barista-in-a-coffee-cup-vector.jpg?ver=6);
+    margin-bottom: 5%;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.box_proyecto3:hover{
+    border: 1px solid transparent;
+    box-shadow: var(--box_shadow-primary);
+}
+
+.box_proyecto3 h2{
+    font-size: var(--text_title_card);
+    font-weight: 600;
+    text-align: left;
+}
+
+.box_proyecto3 p{
+    margin-top: 20px;
+    text-align: left;
+}
+
+
+/*Equipo*/
+.container_equipo{
+    background: var(--background-color);
+    padding-top: 100px;
+}
+
+.equipo{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text_equipo{
+    max-width: 800px;
+    margin: auto;
+}
+
+.text_equipo p{
+    color: var(--color_text-primary);
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+}
+
+.text_equipo h1{
+    font-size: var(--text_size_title);
+    font-weight: 600;
+    color: var(--color_text-secundary);
+}
+
+.container_box-equipo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box_equipo{
     max-width: 350px;
     padding: 60px 40px;
     border-radius: 20px;
     margin: 14px;
-    background-image: url() ;
-    background-size: cover;
     transition: transform 0.5s ease;
+    background-image: url(https://img.freepik.com/vector-gratis/mujer-morena-personaje-dibujos_23-2147502479.jpg);
+    background-size: cover;
+    margin-bottom: 5%;
 }
 
-.box_card-image1:hover{
+.box_equipo:hover{
+    background-image: none;
     transform: scale(1.1);
     box-shadow: var(--box_shadow-primary);
 }
 
-.box_card-image2{
+.box_equipo p{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.box_equipo:hover p{
+    opacity: 1;
+}
+
+.box_equipo1{
     max-width: 350px;
     padding: 60px 40px;
     border-radius: 20px;
     margin: 14px;
-    background-image: url() ;
-    background-size: cover;
     transition: transform 0.5s ease;
+    background-image: url(https://c8.alamy.com/compes/m93175/guapo-builder-en-uniforme-personaje-de-dibujos-animados-professional-trabajador-de-la-construccion-reparador-sonriente-con-una-taza-de-cafe-ilustracion-vectorial-sobre-blanco-m93175.jpg);
+    background-size: cover;
+    margin-bottom: 5%;
 }
 
-.box_card-image2:hover{
+.box_equipo1:hover{
+    background-image: none;
     transform: scale(1.1);
     box-shadow: var(--box_shadow-primary);
 }
 
-.box_card-image3{
+.box_equipo1 p{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.box_equipo1:hover p{
+    opacity: 1;
+}
+
+.box_equipo2{
     max-width: 350px;
     padding: 60px 40px;
     border-radius: 20px;
     margin: 14px;
-    background-image: url() ;
+    transition: all 300ms;
+    background-image: url(https://previews.123rf.com/images/jemastock/jemastock1803/jemastock180305881/97481713-ilustraci%C3%B3n-de-una-caricatura-de-hombre-joven-en-una-camisa-azul.jpg);
     background-size: cover;
-    transition: transform 0.5s ease;
+    margin-bottom: 5%;
 }
 
-.box_card-image3:hover{
+.box_equipo2:hover{
+    background-image: none;
     transform: scale(1.1);
     box-shadow: var(--box_shadow-primary);
+}
+
+.box_equipo2 p{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.box_equipo2:hover p{
+    opacity: 1;
 }
 
 
